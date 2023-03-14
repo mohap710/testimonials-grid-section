@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Quicksand&display=swap");
+
+:root {
+  --Moderate-violet: #7541c8;
+  --dark-grayish-blue: #48556a;
+  --dark-blackish-blue: #19212e;
+  --Light-gray: #cfcfcf;
+  --Light-blue: #ecf2f8;
+}
+*,
+*::after,
+*::before {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 13px;
+  background-color: var(--Light-blue);
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  padding: 3rem 1rem;
+  grid-auto-flow: row;
+  gap: 1rem;
+}
+.card {
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem #19212e40;
+}
+.card:nth-child(1) {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-position: top right 10%;
+  background-repeat: no-repeat;
+  background-color: var(--Moderate-violet);
+  color: whitesmoke;
+}
+.card:nth-child(2) {
+  background-color: var(--dark-grayish-blue);
+  color: whitesmoke;
+}
+.card:nth-child(3) {
+  background-color: white;
+}
+.card:nth-child(4) {
+  background-color: var(--dark-blackish-blue);
+  color: whitesmoke;
+}
+.card:nth-child(5) {
+  background-color: white;
+}
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  gap: 15px;
+}
+.card-header > img {
+  border-radius: 50%;
+}
+.info > h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.info > span {
+  opacity: 0.5;
+}
+.card-title {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: start;
+  line-height: 1.5;
+}
+p {
+  font-size: 1rem;
+  text-align: start;
+  line-height: 1.5;
+  opacity: 0.5;
+  padding: 1rem;
+}
+p::before {
+  content: "“";
+  padding-inline: 5px;
+}
+p::after {
+  content: "”";
+  padding-inline: 5px;
+}
+.attribution {
+  position: static;
+  background-color: #a9a9a94d;
+  padding-block: 0.5rem;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+@media (min-width: 900px) {
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .row-span-2 {
+    grid-column: span 2;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card:last-child {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+  }
+  .attribution {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
