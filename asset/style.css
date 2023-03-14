@@ -23,7 +23,7 @@ body {
 
 .grid-container {
   display: grid;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   grid-auto-flow: row;
   gap: 1rem;
 }
@@ -57,31 +57,32 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
   gap: 15px;
 }
 .card-header > img {
+  width: 32px;
   border-radius: 50%;
 }
 .info > h4 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 .info > span {
+  font-size: 0.8rem;
   opacity: 0.5;
 }
 .card-title {
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
   text-align: start;
   line-height: 1.5;
 }
 p {
-  font-size: 1rem;
+  font-size: 0.825rem;
   text-align: start;
   line-height: 1.5;
   opacity: 0.5;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 p::before {
   content: "“";
