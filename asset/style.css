@@ -65,7 +65,8 @@ body {
 .card-header > img {
   border-radius: 50%;
 }
-.info > h4 {
+.info > span {
+  display: block;
   font-size: 1rem;
   font-weight: 600;
 }
